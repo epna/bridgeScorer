@@ -35,7 +35,11 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerTournoi = findViewById ( R.id.recyclerTournoi );
         List<tournoi>tournois = new ArrayList<tournoi> ();
         tournois.add (new tournoi ( "libelle1", "01-02-2022",32,"koko","mimi" )  );
+        tournois.add (new tournoi ( "libelle1", "01-02-2022",24,"koko","mimi2" )  );
         recyclerTournoi.setLayoutManager ( new LinearLayoutManager ( this ) );
         recyclerTournoi.setAdapter (new adapterTournoi ( getApplicationContext () ,tournois));
+
+
+
     }
 }
