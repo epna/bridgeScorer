@@ -1,7 +1,10 @@
 package com.bridge.bridgescorer;
 
+import android.content.Intent;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
 
+        FloatingActionButton fab = findViewById(R.id.addTournoi);
         RecyclerView recyclerTournoi = findViewById ( R.id.recyclerTournoi );
         List<tournoi>tournois = new ArrayList<tournoi> ();
         tournois.add (new tournoi ( "libelle1", "01-02-2022",32,"koko","mimi" )  );
@@ -39,7 +43,22 @@ public class MainActivity extends AppCompatActivity {
         recyclerTournoi.setLayoutManager ( new LinearLayoutManager ( this ) );
         recyclerTournoi.setAdapter (new adapterTournoi ( getApplicationContext () ,tournois));
 
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                Intent myIntent = new Intent(MainActivity.this, stepperTournoi.class);
+                //myIntent.putExtra("key", value); //Optional parameters
+                MainActivity.this.startActivity(myIntent);
+                dataBase db = new dataBase ( MainActivity.this );
+
+                //db.addTournoi (  );
+            }
+        });
 
     }
+
+
+
+
 }
