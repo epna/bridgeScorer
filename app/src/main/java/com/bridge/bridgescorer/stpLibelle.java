@@ -9,22 +9,24 @@ import java.io.Serializable;
 
 import ernestoyaquello.com.verticalstepperform.Step;
 
-public class stepperPartenaire extends Step {
-    private EditText trnPartenaire;
+public class stpLibelle extends Step {
+    private EditText trnLibelle;
 
 
-    public stepperPartenaire(String title, String subtitle, String nextButtonText) {
+    public stpLibelle(String title, String subtitle, String nextButtonText) {
         super ( title, subtitle, nextButtonText );
     }
 
     @Override
     public Serializable getStepData() {
-        return null;
+
+        return trnLibelle.getText ().toString ();
     }
 
     @Override
     public String getStepDataAsHumanReadableString() {
-        return null;
+
+        return getStepData ().toString ();
     }
 
     @Override
@@ -45,11 +47,11 @@ public class stepperPartenaire extends Step {
 
         // Here we generate the view that will be used by the library as the content of the step.
         // In this case we do it programmatically, but we could also do it by inflating an XML layout.
-        trnPartenaire = new EditText(getContext());
-        trnPartenaire.setSingleLine(true);
-        trnPartenaire.setHint("Your Name");
+        trnLibelle = new EditText(getContext());
+        trnLibelle.setSingleLine(true);
+        trnLibelle.setHint("Tournoi");
 
-        trnPartenaire.addTextChangedListener(new TextWatcher () {
+        trnLibelle.addTextChangedListener(new TextWatcher () {
 
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -70,7 +72,7 @@ public class stepperPartenaire extends Step {
             }
         });
 
-        return trnPartenaire;
+        return trnLibelle;
 
     }
 

@@ -29,7 +29,7 @@ public class adapterTournoi extends RecyclerView.Adapter<recyclerTournoi> {
    public void onBindViewHolder(@NonNull recyclerTournoi holder, int position) {
       holder.trnLibelle.setText ( tournois.get ( position ).getTrnLibelle () );
       holder.trnDate.setText ( tournois.get ( position ).getTrnDate () );
-      holder.trnNbDonnes.setText ( tournois.get ( position ).getTrnNbDonnes () );
+      //holder.trnNbDonnes.setText ( tournois.get ( position ).getTrnNbDonnes () );
       holder.trnAdversaires.setText ( tournois.get ( position ).getTrnAdversaires () );
       holder.trnPartenaires.setText ( tournois.get ( position ).getTrnPartenaires () );
 

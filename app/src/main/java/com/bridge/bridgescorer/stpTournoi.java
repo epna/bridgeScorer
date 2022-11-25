@@ -7,16 +7,16 @@ import ernestoyaquello.com.verticalstepperform.Step;
 import ernestoyaquello.com.verticalstepperform.VerticalStepperFormView;
 import ernestoyaquello.com.verticalstepperform.listener.StepperFormListener;
 
-public class stepperTournoi extends Activity implements StepperFormListener {
+public class stpTournoi extends Activity implements StepperFormListener {
 
 
 
 
-    public stepperAdversaires stpAdversaires;
-    public stepperLibelle stpLibelle;
-    public stepperPartenaire stpPartenaire;
-    private stepperDate stpDate;
-    private stepperNbDonnes stpNbDonnes;
+    public com.bridge.bridgescorer.stpAdversaires xxAdversaires;
+    public com.bridge.bridgescorer.stpLibelle xxLibelle;
+    public com.bridge.bridgescorer.stpPartenaire xxPartenaire;
+    private stpDateSeance xxDateSeance;
+    private stpDonnesPosition xxNbDonnesPosition ;
 
     private VerticalStepperFormView verticalStepperForm;
 
@@ -26,16 +26,17 @@ public class stepperTournoi extends Activity implements StepperFormListener {
         setContentView(R.layout.add_tournoi);
 
         // Create the steps.
-        stpAdversaires = new stepperAdversaires ("Adversaires","Facultatif","Suivant");
-        stpLibelle = new stepperLibelle ("Libéllé","", "suivant");
-        stpPartenaire = new stepperPartenaire ("Partenaire","","Suivant" );
-        stpDate = new stepperDate ("Date tournoi","","Suivant" );
-        stpNbDonnes = new stepperNbDonnes ("Nb donnes","","Suivant" );
+        xxAdversaires = new stpAdversaires ("Adversaires","Facultatif","Suivant");
+        xxLibelle = new stpLibelle ("Libéllé","", "suivant");
+        xxPartenaire = new stpPartenaire ("Partenaire","","Suivant" );
+        xxDateSeance = new stpDateSeance ("Date tournoi","","Suivant" );
+        xxNbDonnesPosition = new stpDonnesPosition ("Nb donnes","","Suivant" );
+
 
         // Find the form view, set it up and initialize it.
         verticalStepperForm = findViewById(R.id.stepper_form);
         verticalStepperForm
-                .setup(this, stpLibelle, stpDate, stpNbDonnes,stpAdversaires,stpPartenaire)
+                .setup(this, xxLibelle, xxDateSeance, xxNbDonnesPosition,xxAdversaires,xxPartenaire)
                 .init();
     }
 
@@ -43,6 +44,20 @@ public class stepperTournoi extends Activity implements StepperFormListener {
     public void onCompletedForm() {
         // This method will be called when the user clicks on the last confirmation button of the
         // form in an attempt to save or send the data.
+
+        dataBase db = new dataBase ( getBaseContext () );
+
+        db.addTournoi (
+                xxDateSeance.getStepData ().repDate,
+                xxLibelle.getStepData ().toString (),
+                xxNbDonnesPosition.getStepData ().repNbDonnes,
+                xxAdversaires.getStepData ().toString (),
+                xxPartenaire.getStepData ().toString (),
+                xxNbDonnesPosition.getStepData ().repPosition,
+                xxDateSeance.getStepData ().repSeance
+
+                );
+        finish ();
     }
 
     @Override

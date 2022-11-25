@@ -4,29 +4,31 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.io.Serializable;
 
 import ernestoyaquello.com.verticalstepperform.Step;
 
-public class stepperAdversaires extends Step {
-    private EditText trnAdversaires;
+public class stpPartenaire extends Step {
+    private EditText trnPartenaire;
 
 
-    public stepperAdversaires(String title, String subtitle, String nextButtonText) {
+    public stpPartenaire(String title, String subtitle, String nextButtonText) {
         super ( title, subtitle, nextButtonText );
     }
 
-
-
     @Override
     public Serializable getStepData() {
-        return null;
+
+        return trnPartenaire.getText ().toString ();
     }
 
     @Override
     public String getStepDataAsHumanReadableString() {
-        return null;
+
+
+        return getStepData ().toString ();
     }
 
     @Override
@@ -47,11 +49,11 @@ public class stepperAdversaires extends Step {
 
         // Here we generate the view that will be used by the library as the content of the step.
         // In this case we do it programmatically, but we could also do it by inflating an XML layout.
-        trnAdversaires = new EditText(getContext());
-        trnAdversaires.setSingleLine(true);
-        trnAdversaires.setHint("Your Name");
+        trnPartenaire = new EditText(getContext());
+        trnPartenaire.setSingleLine(true);
+        trnPartenaire.setHint("Partenaire");
 
-        trnAdversaires.addTextChangedListener(new TextWatcher () {
+        trnPartenaire.addTextChangedListener(new TextWatcher () {
 
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -72,7 +74,7 @@ public class stepperAdversaires extends Step {
             }
         });
 
-        return trnAdversaires;
+        return trnPartenaire;
 
     }
 

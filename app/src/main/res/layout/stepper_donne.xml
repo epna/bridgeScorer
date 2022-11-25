@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    >
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="35dp"
+    android:layout_weight=".2"
+    android:text=" Donnes "
+    android:textSize="20sp"
+    android:gravity="center_vertical"
+    ></TextView>
+
+    <com.travijuu.numberpicker.library.NumberPicker
+        android:id="@+id/npDonnes"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        numberpicker:min="0"
+        android:layout_marginRight="10dp"
+        numberpicker:max="30"
+        numberpicker:value="24"
+        numberpicker:unit="1"
+        numberpicker:focusable="false"
+        android:layout_weight=".4" />
+
+    <com.github.angads25.toggle.model.ToggleableView
+        android:layout_width="0dp"
+        android:id="@+id/npPosition"
+        
+        android:layout_height="35dp"
+        android:layout_weight=".4" />
+</LinearLayout>

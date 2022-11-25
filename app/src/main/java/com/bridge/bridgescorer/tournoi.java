@@ -6,14 +6,14 @@ class tournoi {
 
     String trnLibelle;
     String trnDate;
-    int tenNbDonnes;
+    int trnNbDonnes;
     String trnAdversaires;
     String trnPartenaires;
 
     public tournoi(String trnLibelle, String trnDate, int trnNbDonnes, String trnAdversaires, String trnPartenaires) {
         this.trnLibelle = trnLibelle;
         this.trnDate = trnDate;
-        this.tenNbDonnes = tenNbDonnes;
+        this.trnNbDonnes = trnNbDonnes;
         this.trnAdversaires = trnAdversaires;
         this.trnPartenaires = trnPartenaires;
     }
@@ -35,11 +35,11 @@ class tournoi {
     }
 
     public int getTrnNbDonnes() {
-        return tenNbDonnes;
+        return trnNbDonnes;
     }
 
-    public void setTrnNbDonnes(int tenNbDonnes) {
-        this.tenNbDonnes = tenNbDonnes;
+    public void setTrnNbDonnes(int trnNbDonnes) {
+        this.trnNbDonnes = trnNbDonnes;
     }
 
     public String getTrnAdversaires() {
