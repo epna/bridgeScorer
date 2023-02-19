@@ -9,4 +9,124 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="dialog_start_game">"Voulez-vous vraiment supprimer : "</string>
+    <string name="start">Ok</string>
+    <string name="cancel">annuler</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="cacher">Cacher les résultats</string>
+    <string name="montrer">Montrer les résultats</string>
+    <string name="majResultatOK">mise à jour donne %1$d terminée</string>
+    <string name="majResultatKO">Erreur mise à jour donne %1$d  </string>
+    <string name="addResultatOK">Donne %1$d résultat enregistré </string>
+    <string name="addResultatKO"> Erreur donne %1$d non enregistrée </string>
+    <string name="cancelAddResultat">Résultat donne %1$d annulée </string>
+    <string name="updateTournoiOK"> Modification tournoi %1$s terminée </string>
+    <string name="updateTournoiKO"> Erreur modification tournoi %1$s </string>
+    <string name="addTournoiOK"> Tournoi créé </string>
+    <string name="addTournoiKO"> Erreur tournoi non créé</string>
+    <string name="updateResultat">Modification donne %1$d terminée </string>
+    <string name="enteteResultatUpdate">Modification donne %1$d </string>
+    <string name="enteteResultatCreate">Nouvelle  donne </string>
+    <string name="addResultat">Nouvelle donne</string>
+    <string name="okResultat">Valider</string>
+    <string name="cancelResultat">Annuler</string>
+    <string name="createDonne2">Saisie de la donne %1$d</string>
+    <string name="requiredDonne">numéro de donne requis</string>
+    <string name="createTournoi">Création tournoi</string>
+    <string name="modifTournoi">Modification tournoi \n </string>
+    <string name="noResultToShare">Aucun résultat à partager</string>
+    <string name="deleteResulat">Supprimer la donne %1$s ? </string>
+    <string name="deletedResulat">Donne %1$s supprimée </string>
+    <string name="deleteCanceled">Suppression annulée</string>
+    <string name="deletedResultat">Suppression annulée</string>
+
+    <integer name="NORD">0</integer>
+    <integer name="SUD">1</integer>
+    <integer name="EST">2</integer>
+    <integer name="OUEST">3</integer>
+
+    <string-array name="resultat">
+        <item>"-13"</item>
+        <item>"-12"</item>
+        <item>"-11"</item>
+        <item>"-10"</item>
+        <item>"-9"</item>
+        <item>"-8"</item>
+        <item>"-7"</item>
+        <item>"-6"</item>
+        <item>"-5"</item>
+        <item>"-4"</item>
+        <item>"-3"</item>
+        <item>"-2"</item>
+        <item>"-1"</item>
+        <item>"="</item>
+        <item>"+1"</item>
+        <item>"+2"</item>
+        <item>"+3"</item>
+        <item>"+4"</item>
+        <item>"+5"</item>
+        <item>"+6"</item>
+    </string-array>
+    <string-array name="declarant">
+        <item>"N"</item>
+        <item>"S"</item>
+        <item>"E"</item>
+        <item>"O"</item>
+    </string-array>
+    <string-array name="couleur">
+        <item>"♣"</item>
+        <item>"♦"</item>
+        <item>"♥"</item>
+        <item>"♠"</item>
+        <item>"SA"</item>
+    </string-array>
+    <string-array name="contre">
+        <item>""</item>
+        <item>"X"</item>
+        <item>"XX"</item>
+    </string-array>
+    <string-array name="vulOrientation">
+        <item>"P"</item>
+        <item>"NS"</item>
+        <item>"EO"</item>
+        <item>"T"</item>
+    </string-array>
+    <integer-array name="vulnerabilite">
+        <item>0</item>  <!--  Donne 1   -->
+        <item>1</item>  <!--  Donne 2   -->
+        <item>2</item>  <!--  Donne 3   -->
+        <item>3</item>  <!--  Donne 4   -->
+        <item>1</item>  <!--  Donne 5   -->
+        <item>2</item>  <!--  Donne 6   -->
+        <item>3</item>  <!--  Donne 7   -->
+        <item>0</item>  <!--  Donne 8   -->
+        <item>2</item>  <!--  Donne 9   -->
+        <item>3</item>  <!--  Donne 10   -->
+        <item>0</item>  <!--  Donne 11   -->
+        <item>1</item>  <!--  Donne 12   -->
+        <item>3</item>  <!--  Donne 13   -->
+        <item>0</item>  <!--  Donne 14   -->
+        <item>1</item>  <!--  Donne 15   -->
+        <item>2</item>  <!--  Donne 16   -->
+    </integer-array>
+    <string-array name="Carte">
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"X"</item>
+        <item>"V"</item>
+        <item>"D"</item>
+        <item>"R"</item>
+        <item>"A"</item>
+    </string-array>
 </resources>

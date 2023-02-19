@@ -1,99 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myCard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="6dp"
-    app:cardElevation="6dp"
-    android:id="@+id/myCard"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    app:cardElevation="20dp">
+
+
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-    >
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_weight=".8"
         android:weightSum="1"
-        android:id="@+id/layout0"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        app:layout_constraintTop_toTopOf="@id/myCard">
-        <TextView
-            android:id="@+id/trnLibelle"
-            android:layout_width="0dp"
-            android:layout_weight="0.8"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout0"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            app:layout_constraintTop_toTopOf="@id/layout0"
-            android:text="sdfflrgflrgkrglre"/>
-        <TextView
-            android:id="@+id/trnDate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight=".8"
+            app:layout_constraintTop_toTopOf="@id/myCard">
+
+            <TextView
+                android:id="@+id/txtLibelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/layout0" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintTop_toBottomOf="@id/layout0">
+
+            <TextView
+                android:id="@+id/txtance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".5" />
+
+            <TextView
+                android:id="@+id/txtSeance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txtPosition"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/txtNbDonnes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txtAdvversaires"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5" />
+
+            <TextView
+                android:id="@+id/txtPartenaire"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_weight=".2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
-            app:layout_constraintTop_toTopOf="@id/layout0"
-            android:text="sdffl"/>
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="1"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:id="@+id/btnResultat"
+                android:src="@drawable/ic_versresultat3"
+                android:layout_gravity="center_horizontal|center_vertical" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:id="@+id/btnPartage"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_gravity="center_horizontal|center_vertical" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:id="@+id/btnDelete"
+                android:src="@drawable/ic_edit_resultat"
+                android:layout_gravity="center_horizontal|center_vertical" />
+        </LinearLayout>
     </LinearLayout>
 
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        android:layout_margin="10dp"
-        android:id="@+id/layout1"
-        app:layout_constraintTop_toBottomOf="@id/layout0">
-
-        <TextView
-            android:id="@+id/trnDdate"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:layout_marginStart="30dp"
-            android:text="Mon essaia"
-            />
-
-        <TextView
-            android:id="@+id/trnNbDonnes"
-            android:text="Mon essaia"
-            android:layout_width="0dp"
-            android:layout_marginStart="20dp"
-            android:layout_weight="0.5"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-
-        app:layout_constraintTop_toBottomOf="@id/layout1">
-        <TextView
-            android:id="@+id/trnAdversaires"
-            android:layout_weight=".3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/trnPartenaire"
-            android:layout_weight=".3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    </LinearLayout>
 </androidx.cardview.widget.CardView>

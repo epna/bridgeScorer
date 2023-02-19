@@ -10,11 +10,16 @@ import java.io.Serializable;
 import ernestoyaquello.com.verticalstepperform.Step;
 
 public class stpAdversaires extends Step {
+
     private EditText trnAdversaires;
+    public Boolean xxModif;
+    public String  xxDefaut;
 
-
-    public stpAdversaires(String title, String subtitle, String nextButtonText) {
+    public stpAdversaires(String title, String subtitle, String nextButtonText, Boolean modif, String defaut ) {
         super ( title, subtitle, nextButtonText );
+        xxModif=modif;
+        if (modif) xxDefaut= defaut;
+
     }
 
 
@@ -43,16 +48,10 @@ public class stpAdversaires extends Step {
 
     @Override
     protected View createStepContentLayout() {
-
-
-
-
-        // Here we generate the view that will be used by the library as the content of the step.
-        // In this case we do it programmatically, but we could also do it by inflating an XML layout.
         trnAdversaires = new EditText(getContext());
         trnAdversaires.setSingleLine(true);
         trnAdversaires.setHint("adversaire");
-
+        if (xxModif) trnAdversaires.setText ( xxDefaut );
         trnAdversaires.addTextChangedListener(new TextWatcher () {
 
             @Override

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+        android:id="@+id/declarant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toggle_selectableAmount="1"
+        app:justifyContent="center"
+        app:flexWrap="wrap">
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/nord"
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            app:toggle_text="Nord"
+            />
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/sud"
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            app:toggle_text="Sud"
+            />
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/est"
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            app:toggle_text="Est"
+            />
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/ouest"
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            app:toggle_text="Ouest"
+            />
+        ></nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+</androidx.appcompat.widget.LinearLayoutCompat>

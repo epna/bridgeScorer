@@ -11,15 +11,18 @@ import ernestoyaquello.com.verticalstepperform.Step;
 
 public class stpLibelle extends Step {
     private EditText trnLibelle;
+    private final Boolean xxModif;
+    private final String xxLibelle;
 
-
-    public stpLibelle(String title, String subtitle, String nextButtonText) {
+    public stpLibelle(String title, String subtitle, String nextButtonText, Boolean modification, String libelle ) {
         super ( title, subtitle, nextButtonText );
+        xxModif=modification;
+        xxLibelle= libelle;
     }
 
     @Override
     public Serializable getStepData() {
-
+        //if (!xxModif) act_add_tournoi.txt_entete.setText (  trnLibelle.getText ().toString ());
         return trnLibelle.getText ().toString ();
     }
 
@@ -50,6 +53,7 @@ public class stpLibelle extends Step {
         trnLibelle = new EditText(getContext());
         trnLibelle.setSingleLine(true);
         trnLibelle.setHint("Tournoi");
+        if (xxModif)  trnLibelle.setText ( xxLibelle  ); else trnLibelle.setText ( "" );
 
         trnLibelle.addTextChangedListener(new TextWatcher () {
 

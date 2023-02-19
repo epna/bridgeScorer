@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/btnNiveauEntame"
+            app:showDividerHorizontal="middle"
+            android:layout_marginLeft="10dp"
+            app:toggle_horizontalSpacing="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:toggle_selectableAmount="1"
+            android:layout_marginTop="10dp"
+            app:maxLine="5"
+
+            app:justifyContent="center"
+            app:flexWrap="wrap"
+
+            > <!-- this attribute is from the underlying FlexboxLayout -->
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="2" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                android:layout_margin="10dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_text="3" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="4" />
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="5" />
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="6" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="7" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="8" />
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="9" />
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn10"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="X" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnV"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                android:layout_margin="10dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_text="V" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnD"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="D" />
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnR"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="R" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnA"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                android:layout_margin="10dp"
+                app:toggle_text="A" />
+
+
+        </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/btnCouleurEntame"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:flexWrap="wrap"
+            app:toggle_horizontalSpacing="15dp"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="6dp"
+            app:justifyContent="center"> <!-- this attribute is from the underlying FlexboxLayout -->
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnTrefle"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_text="T" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnCarreau"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_text="K" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnCoeur"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_text="C" />
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnPique"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_borderWidth="1dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_text="P" />
+        </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

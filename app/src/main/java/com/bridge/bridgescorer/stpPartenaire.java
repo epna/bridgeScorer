@@ -4,7 +4,6 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import java.io.Serializable;
 
@@ -12,10 +11,14 @@ import ernestoyaquello.com.verticalstepperform.Step;
 
 public class stpPartenaire extends Step {
     private EditText trnPartenaire;
+    private final Boolean xxModif;
+    private String xxPartenaire;
 
-
-    public stpPartenaire(String title, String subtitle, String nextButtonText) {
+    public stpPartenaire(String title, String subtitle, String nextButtonText,Boolean modification, String defaut) {
         super ( title, subtitle, nextButtonText );
+        xxModif=modification;
+        if (modification) xxPartenaire=defaut;
+
     }
 
     @Override
@@ -52,7 +55,7 @@ public class stpPartenaire extends Step {
         trnPartenaire = new EditText(getContext());
         trnPartenaire.setSingleLine(true);
         trnPartenaire.setHint("Partenaire");
-
+        if(xxModif) trnPartenaire.setText (xxPartenaire ); else trnPartenaire.setText ( "" );
         trnPartenaire.addTextChangedListener(new TextWatcher () {
 
             @Override

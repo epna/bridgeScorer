@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="vuldonneur">
+        <attr name="numDonne" format="integer" />
+    </declare-styleable>
+</resources>

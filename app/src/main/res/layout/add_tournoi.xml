@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".stpTournoi">
-
+    android:id="@+id/dummyLayout"
+    android:orientation="vertical"
+    tools:context=".act_add_tournoi">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txt_entete"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:layout_gravity="top"
+        android:background="@drawable/titre_page"
+        android:text="nouveau résultat"
+        android:textSize="20sp" />
     <ernestoyaquello.com.verticalstepperform.VerticalStepperFormView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/stepper_form"
+        android:id="@+id/sf_tournoi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:form_circle_background_color="@color/colorPrimary"
         app:form_next_button_background_color="@color/colorPrimary"
         app:form_next_button_pressed_background_color="@color/colorPrimaryDark"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

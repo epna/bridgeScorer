@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent "
+        android:layout_height="wrap_content"
+
+        />
+
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+        android:id="@+id/btnGroupNiveau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:flexWrap="wrap"
+        app:layout_flexGrow="0"
+
+        app:justifyContent="center"
+
+        > <!-- this attribute is from the underlying FlexboxLayout -->
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/btn1"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            app:toggle_text="1"
+
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderWidth="2dp"
+            app:toggle_textColor="@color/black"
+            app:toggle_textSize="15sp"
+
+            app:toggle_borderColor="@color/teal_700"
+            app:toggle_circularCornerRadius="true"
+            app:toggle_btnCornerRadius="50dp"
+
+            app:toggle_selectedBackgroundColor="@color/light_blue"
+            app:toggle_selectedTextColor="@color/black"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="8dp"
+
+ />
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/btn2"
+            app:toggle_text="2"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderWidth="2dp"
+            app:toggle_textColor="@color/black"
+            app:toggle_textSize="15sp"
+
+            app:toggle_borderColor="@color/teal_700"
+            app:toggle_circularCornerRadius="true"
+            app:toggle_btnCornerRadius="50dp"
+
+            app:toggle_selectedBackgroundColor="@color/light_blue"
+            app:toggle_selectedTextColor="@color/black"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="8dp"
+
+/>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:toggle_text="3"
+
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderWidth="2dp"
+            app:toggle_textColor="@color/black"
+            app:toggle_textSize="15sp"
+
+            app:toggle_borderColor="@color/teal_700"
+            app:toggle_circularCornerRadius="true"
+            app:toggle_btnCornerRadius="50dp"
+
+            app:toggle_selectedBackgroundColor="@color/light_blue"
+            app:toggle_selectedTextColor="@color/black"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="8dp"
+
+            />
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:toggle_text="4"
+
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderWidth="2dp"
+            app:toggle_textColor="@color/black"
+            app:toggle_textSize="15sp"
+
+            app:toggle_borderColor="@color/teal_700"
+            app:toggle_circularCornerRadius="true"
+            app:toggle_btnCornerRadius="50dp"
+
+            app:toggle_selectedBackgroundColor="@color/light_blue"
+            app:toggle_selectedTextColor="@color/black"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="8dp"
+
+ />
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:toggle_text="5"
+
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderWidth="2dp"
+            app:toggle_textColor="@color/black"
+            app:toggle_textSize="15sp"
+
+            app:toggle_borderColor="@color/teal_700"
+            app:toggle_circularCornerRadius="true"
+            app:toggle_btnCornerRadius="50dp"
+
+            app:toggle_selectedBackgroundColor="@color/light_blue"
+            app:toggle_selectedTextColor="@color/black"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="8dp"
+        />
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:toggle_text="6"
+
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderWidth="2dp"
+            app:toggle_textColor="@color/black"
+            app:toggle_textSize="15sp"
+
+            app:toggle_borderColor="@color/teal_700"
+            app:toggle_circularCornerRadius="true"
+            app:toggle_btnCornerRadius="50dp"
+
+            app:toggle_selectedBackgroundColor="@color/light_blue"
+            app:toggle_selectedTextColor="@color/black"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="8dp"
+         />
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:toggle_text="7"
+
+            app:toggle_backgroundColor="@color/white"
+            app:toggle_borderWidth="2dp"
+            app:toggle_textColor="@color/black"
+            app:toggle_textSize="15sp"
+
+            app:toggle_borderColor="@color/teal_700"
+            app:toggle_circularCornerRadius="true"
+            app:toggle_btnCornerRadius="50dp"
+
+            app:toggle_selectedBackgroundColor="@color/light_blue"
+            app:toggle_selectedTextColor="@color/black"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="8dp"
+
+            />
+
+    </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/btnGroupCouleur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:flexWrap="wrap"
+            app:toggle_horizontalSpacing="15dp"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="6dp"
+            app:justifyContent="center" >
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnTrefle"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_backgroundColor="@color/white"
+                app:toggle_selectedBackgroundColor="@color/light_blue"
+
+                app:toggle_text="" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnCarreau"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_backgroundColor="@color/white"
+                app:toggle_selectedBackgroundColor="@color/light_blue"
+
+                app:toggle_text="" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnCoeur"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_backgroundColor="@color/white"
+                app:toggle_selectedBackgroundColor="@color/light_blue"
+
+                app:toggle_text="" />
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnPique"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="6dp"
+                app:toggle_backgroundColor="@color/white"
+                app:toggle_selectedBackgroundColor="@color/light_blue"
+
+                app:toggle_text="" />
+
+        </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/btnGroupContre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:flexWrap="wrap"
+            app:alignItems="center"
+            app:toggle_horizontalSpacing="15dp"
+            app:toggle_selectedBorderColor="@color/black"
+            app:toggle_selectedBorderWidth="10dp"
+            app:justifyContent="center"> <!-- this attribute is from the underlying FlexboxLayout -->
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnNonContre"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                app:toggle_backgroundColor="@color/green"
+                app:toggle_selectedBackgroundColor="@color/green"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="8dp"
+                app:toggle_textColor="@color/white"
+                app:toggle_selectedTextColor="@color/white"
+                app:toggle_textSize="15sp"
+                app:toggle_borderColor="@color/black"
+
+                app:toggle_text="P" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnContre"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                app:toggle_backgroundColor="@color/red"
+                app:toggle_selectedBackgroundColor="@color/red"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="8dp"
+                app:toggle_textColor="@color/white"
+                app:toggle_selectedTextColor="@color/white"
+                app:toggle_borderColor="@color/black"
+                app:toggle_textSize="15sp"
+
+                app:toggle_text=" X " />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btnSurContre"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                app:toggle_backgroundColor="@color/blue_violet"
+                app:toggle_selectedBackgroundColor="@color/blue_violet"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="8dp"
+                app:toggle_textColor="@color/white"
+                app:toggle_selectedTextColor="@color/white"
+                app:toggle_textSize="15sp"
+                app:toggle_borderColor="@color/black"
+
+                app:toggle_text=" XX" />
+       </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -3,15 +3,52 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable-anydpi/ic_delete.xml" value="0.271" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable-anydpi/ic_versresultat2.xml" value="0.271" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.271" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.271" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.271" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable/ic_versresultat.xml" value="0.271" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable/oval_text.xml" value="0.3245" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable/rounded_text.xml" value="0.3245" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable/titre_page.xml" value="0.256" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/drawable/txt_resultat.xml" value="0.32" />
         <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/activity_main2.xml" value="0.36614583333333334" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/add_resultat.xml" value="0.36614583333333334" />
         <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/add_tournoi.xml" value="0.37083333333333335" />
         <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/content_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/ffffff.xml" value="0.37083333333333335" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/ffrfrrf.xml" value="0.3697916666666667" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/fragment_blank.xml" value="0.37083333333333335" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/fragment_blank2.xml" value="0.36614583333333334" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/fragment_creation_tournoi.xml" value="0.37083333333333335" />
         <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/fragment_first.xml" value="0.19114583333333332" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/fragment_liste_principale.xml" value="0.37083333333333335" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/fragment_second.xml" value="0.37083333333333335" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/liste_resultat.xml" value="0.36614583333333334" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/main_fragment.xml" value="0.37083333333333335" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/myapppbar.xml" value="0.37083333333333335" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/number_picker.xml" value="0.2701062215477997" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/resultat_view.xml" value="0.3651041666666667" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/sample_my_view.xml" value="0.37083333333333335" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/sample_my_view2.xml" value="0.3567708333333333" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/sample_vulnerabilite_donneur.xml" value="0.3567708333333333" />
         <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/stepper_date.xml" value="0.37083333333333335" />
         <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/stepper_donne.xml" value="0.37083333333333335" />
         <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/stepper_libelle.xml" value="0.190625" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/stp2_contrat.xml" value="0.33" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/stp2_declarant.xml" value="0.36614583333333334" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/stp2_entame.xml" value="0.3005487547488392" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/stp2_numero_donne.xml" value="0.3004273504273504" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/texte_resultat.xml" value="0.36614583333333334" />
         <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/tournoi_view.xml" value="0.3394255874673629" />
         <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/layout/xxxxxx.xml" value="0.36614583333333334" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/menu/main.xml" value="0.37083333333333335" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/menu/menu_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/menu/menulisteresultats.xml" value="0.37083333333333335" />
+        <entry key="..\:/MesDev/Studio/bridgeScorer/app/src/main/res/xml/filepaths.xml" value="0.21822916666666667" />
       </map>
     </option>
   </component>
