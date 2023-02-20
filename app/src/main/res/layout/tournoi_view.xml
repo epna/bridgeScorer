@@ -22,7 +22,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight=".8"
         android:weightSum="1"
-        android:layout_marginBottom="10dp"
+
         android:orientation="vertical">
 
 
@@ -45,6 +45,7 @@
                 android:textSize="30sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
+                android:gravity="center"
                 app:layout_constraintTop_toTopOf="@id/layout0" />
         </LinearLayout>
 
@@ -118,40 +119,40 @@
                 android:layout_weight=".5" />
 
         </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight=".2"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:weightSum="1"
-            >
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
                 android:layout_weight=".2"
-                android:id="@+id/btnResultat"
-                android:src="@drawable/ic_versresultat3"
-                android:layout_gravity="center_horizontal|center_vertical" />
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1"
+                android:gravity="center"
+                >
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight=".2"
-                android:id="@+id/btnPartage"
-                android:src="@drawable/ic_baseline_share_24"
-                android:layout_gravity="center_horizontal|center_vertical" />
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight=".2"
-                android:id="@+id/btnDelete"
-                android:src="@drawable/ic_edit_resultat"
-                android:layout_gravity="center_horizontal|center_vertical" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:id="@+id/btnPartage"
+                    android:src="@drawable/ic_share_blue"
+                    android:text="Partager"
+
+
+                    android:layout_gravity="center_horizontal|center_vertical" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:id="@+id/editTournoi"
+
+                    android:src="@drawable/ic_edit_resultat"
+                    android:layout_gravity="center_horizontal|center_vertical" />
+            </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

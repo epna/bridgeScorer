@@ -81,8 +81,6 @@ public class adapterResultat extends RecyclerView.Adapter<recyclerResultat> {
             holder.resSynthese.setText ( "" );
             holder.resEntame.setText ( "" );
         }
-
-
     }
 
     @Override

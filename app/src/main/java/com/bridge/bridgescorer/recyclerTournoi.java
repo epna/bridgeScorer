@@ -35,7 +35,7 @@ import java.text.SimpleDateFormat;
 
 public class recyclerTournoi extends RecyclerView.ViewHolder {
     TextView trnDatevv, trnLibelle, trnNbDonnes, trnAdversaires, trnPartenaires, trnSeance, trnPosition;
-    ImageButton btnPartage, btnResultat, btnDelete;
+    ImageButton btnPartage, btnEditTournoi;
     Integer idTournoi;
 
     public recyclerTournoi(@NonNull View itemView) {
@@ -50,8 +50,7 @@ public class recyclerTournoi extends RecyclerView.ViewHolder {
         trnSeance = itemView.findViewById ( R.id.txtSeance );
         trnPosition = itemView.findViewById ( R.id.txtPosition );
         btnPartage = itemView.findViewById ( R.id.btnPartage );
-        btnResultat = itemView.findViewById ( R.id.btnResultat );
-        btnDelete = itemView.findViewById ( R.id.btnDelete );
+        btnEditTournoi = itemView.findViewById ( R.id.editTournoi );
         itemView.setOnLongClickListener ( new View.OnLongClickListener () {
             @Override
             public boolean onLongClick(View view) {
@@ -116,7 +115,7 @@ public class recyclerTournoi extends RecyclerView.ViewHolder {
                         }
         } );
 
-        btnResultat.setOnClickListener ( new View.OnClickListener () {
+        btnEditTournoi.setOnClickListener ( new View.OnClickListener () {
             @Override
             public void onClick(View view) {
                 voirListeResultat(view);
@@ -124,6 +123,7 @@ public class recyclerTournoi extends RecyclerView.ViewHolder {
             }
         } );
 
+/*
         btnDelete.setOnClickListener ( new View.OnClickListener () {
             @Override
             public void onClick(View view) {
@@ -141,6 +141,7 @@ public class recyclerTournoi extends RecyclerView.ViewHolder {
             }
         } );
 
+*/
 
 
 

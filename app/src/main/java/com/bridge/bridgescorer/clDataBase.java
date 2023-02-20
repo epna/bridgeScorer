@@ -119,11 +119,10 @@ public ContentValues  setValueResultat(clResultat svResultat)
             Cursor res = db.rawQuery ( "select last_insert_rowid() as lastID from tournois", null );
             res.moveToFirst ();
             String temp = res.getString ( 0 );
-
             Integer xxId = Integer.valueOf ( temp );
             myTournoi.setId ( xxId );
-            MainActivity myActivity = new MainActivity ();
             MainActivity.tournois.add(myTournoi);
+            MainActivity.adapter.notifyDataSetChanged ();
         }
         return result;
     }

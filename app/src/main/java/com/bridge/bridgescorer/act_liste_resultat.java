@@ -90,6 +90,8 @@ public class act_liste_resultat extends AppCompatActivity {
         Bundle extras = getIntent ().getExtras ();
         clTournoi monTournoi = (clTournoi) extras.getSerializable ( "peTournoi" );
         idTournoi = monTournoi.touId;
+
+
         fab2.setOnClickListener ( new View.OnClickListener () {
             @Override
             public void onClick(View view) {

@@ -100,6 +100,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onPostResume() {
 
         super.onPostResume ();
+        tournois.clear ();
+        clDataBase xxDatabase = new clDataBase ( context );
+        Cursor cursor = xxDatabase.listetournois ();
+        if (cursor.getCount () == 0) return;
+        while (cursor.moveToNext ()) {
+            Date maDate = new Date (cursor.getLong(1));
+            tournois.add ( new clTournoi (
+                    cursor.getString ( 2 ),
+                    maDate,
+                    cursor.getInt ( 3 ),
+                    cursor.getString ( 4 ),
+                    cursor.getString ( 5 ),
+                    cursor.getInt ( 6 ),
+                    (cursor.getInt ( 7 ) == 1),
+                    cursor.getInt ( 0 )
+
+            ) );
+        }
         adapter.notifyDataSetChanged ();
     }
 
@@ -111,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
    public static void updateUI()
    {
        adapter.notifyDataSetChanged ();
+
    }
 
 }

@@ -50,7 +50,7 @@ public class recyclerResultat extends RecyclerView.ViewHolder  {
                                 Integer tmpDonne = Integer.parseInt ( resNumeroDonne.getText ().toString ());
                                 db.deleteResultat (tmpTournoi,tmpDonne);
                                 act_liste_resultat.resultats.remove ( xxposition ( tmpDonne ) );
-                                act_liste_resultat.myAdapter.notifyDataSetChanged ();
+                                act_liste_resultat.myAdapter.notifyItemRangeRemoved ( xxposition ( tmpDonne ),1 );
 
 
                             }
